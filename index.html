@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Arrivals</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./assets/javascript/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <table>
+                    <thead>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blue Line</td>
+                            <td>Doraville</td>
+                            <td>7 min</td>
+                            <td>10:02 am</td>
+                            <td>3 min</td>
+                        </tr>
+                        <tr>
+                            <td>Red Line</td>
+                            <td>Loganville</td>
+                            <td>11 min</td>
+                            <td>10:13 am</td>
+                            <td>7 min</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form>
+                    <div class="form-group">
+                        <label for="train-name">Train Name</label>
+                        <select class="form-control" id="train-name">
+                            <option>Red</option>
+                            <option>Blue</option>
+                            <option>Green</option>
+                            <option>Yellow</option>
+                            <option>Black</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="City">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-time">First Train Time</label>
+                        <input type="text" class="form-control" id="start-time" placeholder="Military Time (hh:mm)">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Minutes">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
